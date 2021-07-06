@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{% block content %}
+      
+
+<h1>play & fun !!</h1>
+<p style="color:skyblue">
+
+</h>
+
+
+
+
+
+<br><br>
+<h2>Hello {{name}}!</h2>
+<br><br>
+<form action="add" method="POST">
+
+{% csrf_token %}
+
+<i>Enter Your birth date</i> : <input type="text" name= "num1"><br><br>
+<i>Enter your birth year<i> : <input type="text" name= "num2"><br>
+<br><h3><input type="submit"></h3><br>
+
+</form>
+
+
+{% endblock %}
+
+</body>
+
+
